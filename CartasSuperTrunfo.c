@@ -25,7 +25,7 @@ int main() {
     float area1, area2;
     float pib1, pib2;
     int pontos_turisticos1, pontos_turisticos2;
-
+printf("Ola!");
     // Carta 1
     printf("Informe o estado da Carta 1 (A-H): \n");
     scanf("%s", &estado1);
