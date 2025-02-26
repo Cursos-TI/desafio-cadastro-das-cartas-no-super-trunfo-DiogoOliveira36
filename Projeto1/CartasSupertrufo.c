@@ -25,13 +25,13 @@ int main() {
     float area1, area2;
     float pib1, pib2;
     int pontos_turisticos1, pontos_turisticos2;
- printf("Ola!");
+ 
     // Carta 1
     printf("Informe o estado da Carta 1 (A-Z): ");
-    scanf("%s", &estado1);
+    scanf(" %c", &estado1);
     
     printf("Informe o código da Carta 1 (ex. A01): ");
-    scanf("%s", &codigo1);
+    scanf("%3s", &codigo1);
     
     getchar(); // Consome a quebra de linha antes de fgets
 
@@ -50,7 +50,14 @@ int main() {
     printf("Informe o número de Pontos Turísticos da cidade da Carta 1: ");
     scanf("%d", &pontos_turisticos1);
 
-    printf("\n");
+    printf("\nCarta 1:\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Nome da Cidade: %s\n\n", cidade1);
+    printf("Populção: %d\n", populacao1);
+    printf("Área: %.3f Km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Números Pontos Turísticos: %d\n", pontos_turisticos1);
 
     //Carta 2
     printf("Informe o estado da Carta 2 (A-Z): ");
@@ -76,6 +83,14 @@ int main() {
     printf("Informe o número de Pontos Turísticos da cidade da Carta 2: ");
     scanf("%d", &pontos_turisticos2);
 
+    printf("\nCarta 1:\n");
+    printf("Estado: %s\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Nome: %s\n\n", cidade1);
+    printf("Populção: %d\n", populacao1);
+    printf("Área: %f Km²\n",area1);
+    printf("PIB: %f bilhões de reais\n", pib1);
+    printf("Ponto Turístico: %d\n", pontos_turisticos1);
 
     return 0;
 }
